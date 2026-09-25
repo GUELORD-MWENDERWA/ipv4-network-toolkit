@@ -21,6 +21,16 @@ Addresses are manipulated as 32-bit integers with explicit bit operations (`netw
 
 ## Installation
 
+Install the latest version directly from GitHub:
+
+```bash
+pip install "git+https://github.com/GUELORD-MWENDERWA/ipv4-network-toolkit.git"
+```
+
+Or download the wheel from the [latest release](https://github.com/GUELORD-MWENDERWA/ipv4-network-toolkit/releases/latest) and run `pip install netkit-0.1.0-py3-none-any.whl`.
+
+For development:
+
 ```bash
 git clone https://github.com/GUELORD-MWENDERWA/ipv4-network-toolkit.git
 cd ipv4-network-toolkit
@@ -52,6 +62,14 @@ WAN2       192.168.1.228/30   255.255.255.252 192.168.1.229 - 192.168.1.230     
 $ netkit summarize 172.16.0.0/24 172.16.1.0/24 172.16.2.0/24 172.16.3.0/24
 172.16.0.0/22
 ```
+
+## Results
+
+The figures below are produced by the library itself. Regenerate them with `pip install matplotlib && python docs/make_figures.py`.
+
+![VLSM allocation of 192.168.10.0/24 for six sites](docs/images/vlsm_plan.png)
+
+*VLSM allocation of 192.168.10.0/24 for six sites*
 
 ## Library
 
